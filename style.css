@@ -218,7 +218,6 @@ h3 {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
     font-weight: 300;
     text-align: left;
     margin:  18px 30px 0 40px;
@@ -261,3 +260,79 @@ h3 {
     margin: 10px;
 }
 
+.aboutus {
+    height: 668px;
+    background-color: #f2f2f2;
+    padding-top: 60px;
+    color: #767e9e;
+}
+
+.under-aboutus {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.aboutus-team {
+    display: flex;
+    margin: 43px 30px 0 30px; 
+}
+.aboutus-team-item {
+    margin: 0 10px;
+}
+
+.aboutus-team-photo {
+    width: 300px;
+    height: 300px;
+}
+
+.aboutus-team-name {
+    margin-top: 19px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    text-align: left;
+    overflow-y: hidden;
+}
+
+.aboutus-team-description {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: left;
+}
+
+.aboutus-social {
+    display: flex;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.aboutus-social-li {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutus-social-fb {
+    background-image: url(assets/images/facebook.svg);
+}
+
+.aboutus-social-google {
+    background-image: url(assets/images/googleplus.svg);
+}
+
+.aboutus-social-twitter {
+    background-image: url(assets/images/twitter.svg);
+}
+
+.aboutus-social-linkedin {
+    background-image: url(assets/images/linkedin.svg);
+}
