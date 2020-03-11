@@ -1,0 +1,263 @@
+@import url("singolo1-fonts.css");
+
+* {
+    font-family: "Lato";
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1020px;
+    margin: 0 auto;    
+}
+
+.header {
+    height: 89px;
+    background-color: #2d303a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+.h1-logo {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.red-logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #f06c64;
+
+}
+
+.nav {
+    margin-right: 40px;
+    width: 370px;
+}
+
+.nav-ul {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.nav-ul-li{
+    display: flex;
+    font-size: 11px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-ul-li:hover {
+    cursor: pointer;
+    color: #f06c64;
+}
+
+.under-header {
+    height: 6px;
+    background-color: #323746;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 594px;
+    background-color: #f06c64;
+}
+
+.slider-navigation {
+    width: 60px;
+}
+
+.slider-navigation-left {
+    text-align: right;
+}
+
+.slider-navigation-left:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.slider-navigation-right:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.slider-main {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.under-slider {
+    height: 6px;
+    background-color: #ea676b;
+}
+
+h2 {
+    font-size: 30px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    margin-left: 40px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+.services {
+    padding-top: 60px;
+    height: 434px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.services-description {
+    margin: 18px 30px 0 40px;
+    font-size: 18px;
+    line-height: 30px;  
+    font-weight: 300;
+    text-align: left;
+}
+.services-ul {
+    list-style-type: none;
+    padding: 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-ul-li {
+    width: 300px;
+    margin: 30px 10px 0 10px;
+    display: flex;
+        
+}
+.services-li-h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.services-li-description {
+    width: 220px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+
+.services-icon {
+    width: 57px;
+    height: 57px;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pen-icon {
+    background-image: url(./assets/images/pen.svg);
+}
+
+.bulb-icon {
+    background-image: url(./assets/images/bulb.svg);
+}
+
+.heart-icon {
+    background-image: url(./assets/images/heart.svg);
+}
+
+.phone-icon {
+    background-image: url(./assets/images/phone.svg);
+}
+
+.bubble-icon {
+    background-image: url(./assets/images/bubble.svg);
+}
+
+.star-icon {
+    background-image: url(./assets/images/star.svg);
+}
+
+.under-services {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.portfolio {
+    height: 803px;
+    padding-top: 60px;
+    background-color: #2d303a;
+}
+.under-portfolio {
+    height: 6px;
+    background-color: #323746;
+}
+
+.portfolio-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin:  18px 30px 0 40px;
+}
+
+.portfolio-tags {
+    display: flex;
+    margin:  10px 30px 0 40px;
+}
+
+.portfolio-tag {
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 0 8px;
+    border: 1px solid #666d89;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+}
+
+.portfolio-tag:hover {
+    cursor: pointer;
+    border: 1px solid #c5c5c5;
+    color: #c5c5c5;
+}
+
+.portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 9px 30px;
+    height: 621px;
+    overflow-y: hidden;
+}
+
+.portfolio-projects__item {
+    width: 220px;
+    height: 187px;
+    overflow: hidden;
+    margin: 10px;
+}
+
