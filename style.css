@@ -11,6 +11,10 @@
     margin: 0 auto;    
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 .header {
     height: 89px;
     background-color: #2d303a;
@@ -33,7 +37,6 @@
     font-size: 25px;
     font-weight: 700;
     color: #f06c64;
-
 }
 
 .nav {
@@ -43,7 +46,6 @@
 
 .nav-ul {
     display: flex;
-    
     justify-content: space-between;
     margin-top: 7px;
 }
@@ -131,24 +133,27 @@ h3 {
 }
 
 .services-description {
-    margin: 18px 30px 0 40px;
+    margin: 18px 40px 0 40px;
     font-size: 18px;
     line-height: 30px;  
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
 }
+
 .services-ul {
     list-style-type: none;
     padding: 15px 30px;
     display: flex;
     flex-wrap: wrap;
 }
+
 .services-ul-li {
     width: 300px;
     margin: 30px 10px 0 10px;
     display: flex;
         
 }
+
 .services-li-h3 {
     font-size: 18px;
     line-height: 18px;
@@ -164,6 +169,7 @@ h3 {
     font-size: 12px;
     line-height: 22px;
     text-align: justify;
+    hyphens: auto;
 }
 
 
@@ -175,6 +181,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .pen-icon {
     background-image: url(./assets/images/pen.svg);
 }
@@ -209,6 +216,7 @@ h3 {
     padding-top: 60px;
     background-color: #2d303a;
 }
+
 .under-portfolio {
     height: 6px;
     background-color: #323746;
@@ -302,7 +310,8 @@ h3 {
     line-height: 22px;
     color: #767e9e;
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .aboutus-social {
@@ -314,7 +323,7 @@ h3 {
 .aboutus-social-li {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 8px;
     border-radius: 50%;
     border: 1px solid #666d89;
     background-position: center;
@@ -322,17 +331,159 @@ h3 {
 }
 
 .aboutus-social-fb {
-    background-image: url(assets/images/facebook.svg);
+    background-image: url(assets/images/facebook.png);
 }
 
 .aboutus-social-google {
-    background-image: url(assets/images/googleplus.svg);
+    background-image: url(assets/images/googleplus.png);
 }
 
 .aboutus-social-twitter {
-    background-image: url(assets/images/twitter.svg);
+    background-image: url(assets/images/twitter.png);
 }
 
 .aboutus-social-linkedin {
-    background-image: url(assets/images/linkedin.svg);
+    background-image: url(assets/images/linkedin.png);
+}
+
+.aboutus-social-li:hover {
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+.getaquote {
+    height: 588px;
+    padding-top: 60px;
+    background-color: #f06c64;
+    color: #f0d8d9;
+}
+
+.getaquote h2 {
+    color: #f0d8d9;
+}
+
+.getaquote h3 {
+    color: #f0d8d9;
+}
+
+.getaquote-description {
+    margin: 18px 40px 0 40px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: left;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.getaquote-main {
+    display: flex;
+    margin-top: 42px;
+}
+
+.getaquote-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin-left: 40px;
+}
+
+.getaquote-form__text {
+    display: flex;
+    padding-left: 15px;
+    width: 618px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d6564f;
+    margin-bottom: 16px;
+}
+
+.getaquote-form__text::placeholder, .getaquote-form__textarea::placeholder  {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-weight: 400;
+}
+
+.getaquote-form__textarea {
+    width: 618px;
+    height: 195px;
+    padding-top: 7px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d6564f;
+}
+
+.getaquote-contacts {
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.getaquote-contacts-description {
+    margin: 10px 0 20px 0;
+    width: 300px;
+}
+
+.getaquote-contacts-location {
+    padding-left: 24px;
+    background-image: url(assets/images/location.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 2px;
+}
+
+.getaquote-contacts-phone {
+    padding-left: 24px;
+    background-image: url(assets/images/phone.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.getaquote-contacts-phone a, .getaquote-contacts-mail a {
+    color: #f0d8d9;
+    text-decoration: none;
+}
+
+.getaquote-contacts-mail {
+    padding-left: 24px;
+    background-image: url(assets/images/mail.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.getaquote-form__button {
+    width: 120px;
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0d8d9;
+}
+
+.getaquote-form__button:hover {
+    cursor: pointer;
+    background-color: #d6564f;
+}
+
+.footer {
+    height: 76px;
+    background-color: #2d303a;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.copyright{
+    color: #666d89;
+    margin-top: 26px;
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
 }
