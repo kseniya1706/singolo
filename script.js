@@ -17,6 +17,8 @@ function portfolioTagClick(event) {
 document.querySelector('.portfolio-projects').addEventListener('mousedown', () => portfolioProjectsClick(event));
 
 function portfolioProjectsClick(event) {
-    document.querySelector('.portfolio-projects-item__pressed').classList.remove('portfolio-projects-item__pressed');
+    if (document.querySelector('.portfolio-projects-item__pressed')){
+        document.querySelector('.portfolio-projects-item__pressed').classList.remove('portfolio-projects-item__pressed');
+    }
     event.target.parentElement.classList.add('portfolio-projects-item__pressed');
  }
