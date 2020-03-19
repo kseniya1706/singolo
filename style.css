@@ -60,8 +60,17 @@ a:hover {
     justify-content: space-between;
 }
 
-.nav-ul-li:hover {
+.nav-ul-li-a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-ul-li a:hover {
     cursor: pointer;
+    color: #f06c64;
+}
+
+.nav-choosed{
     color: #f06c64;
 }
 
@@ -251,8 +260,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     margin: 9px 30px;
-    height: 621px;
-    overflow-y: hidden;
+    list-style-type: none;
 }
 
 .portfolio-projects__item {
@@ -260,6 +268,10 @@ h3 {
     height: 187px;
     overflow: hidden;
     margin: 10px;
+}
+
+.portfolio-projects__item:nth-child(1n + 13) {
+    display: none;
 }
 
 .aboutus {
@@ -406,6 +418,7 @@ h3 {
     border-radius: 5px;
     border: none;
     background-color: #d6564f;
+    resize: none;
 }
 
 .getaquote-contacts {
