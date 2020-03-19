@@ -11,7 +11,7 @@
     <div class="wrapper">
         <header class = "header">
             <div class = "logo">
-                <h1 class = "h1-logo">SINGOLO</h1>
+                <h1 class = "h1-logo">singolo</h1>
                 <span class = "red-logo">*</span>
             </div>
                 <nav class = "nav">
@@ -24,7 +24,6 @@
                     </ul>
                 </nav>
         </header>
-        <div class = "under-header"></div>
         <div class = "slider">
             <div class = "slider-navigation slider-navigation-left">
                 <img src="./assets/images/chev-left.png">
@@ -37,7 +36,6 @@
                 <img src="./assets/images/chev-right.png">
             </div>
         </div>
-        <div class = "under-slider"></div>
         <section class = "services">
             <h2>Our Services</h2>
             <p class = "services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -77,6 +75,7 @@
                 <h3 class = "services-li-h3">Responsive Layout</h3>
                 <div>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit 
                     nunc ligula. Praesent elit leo.</div>
+                </div>
             </li>
             <li class = "services-ul-li">
                 <div class = "services-icon bubble-icon"></div>
@@ -96,7 +95,6 @@
             </li>
         </ul>
     </section>
-    <div class = "under-services"></div>
 
     <section class = "portfolio">
         <div class = "portfolio-heading">
@@ -125,7 +123,6 @@
             <div class = "portfolio-projects__item"><img src="./assets/images/project12.png"></div>
         </div>
     </section>
-    <div class = "under-portfolio"></div>
 
     <section class = "aboutus">
         <div>
@@ -179,8 +176,7 @@
             </div>
         </div>
     </section>
-    <div class = "under-aboutus">
-    </div>
+
     <section class = "getaquote">
         <div>
             <h2>Get a Quote</h2>
@@ -190,8 +186,8 @@
             odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
         <div class = "getaquote-main">
         <form class = "getaquote-form">
-            <input type="text" class = "getaquote-form__text" placeholder="Name (Required)">
-            <input type="text" class = "getaquote-form__text" placeholder="Email (Required)">
+            <input type="text" class = "getaquote-form__text" placeholder="Name (Required)" required>
+            <input type="email" class = "getaquote-form__text" placeholder="Email (Required)"required> 
             <input type="text" class = "getaquote-form__text"placeholder="Subject">
             <textarea class = "getaquote-form__textarea" placeholder="Describe your project in detail..."></textarea>
             <button class = "getaquote-form__button">Send!</button>
@@ -208,7 +204,7 @@
         </div>
     </div>
     </section>
-    <div class = "under-slider"></div>
+
     <footer class = "footer">
         <div class = "copyright">&copy; Copyright 2013</div>
         <div>
