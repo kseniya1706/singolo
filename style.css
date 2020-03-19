@@ -81,8 +81,6 @@ a:hover {
     margin-left: 13px;
 }
 
-
-
 .slider {
     display: flex;
     align-items: center;
@@ -256,6 +254,11 @@ h3 {
     color: #c5c5c5;
 }
 
+.portfolio-tag-choosed {
+    border: 1px solid #c5c5c5;
+    color: #c5c5c5;
+}
+
 .portfolio-projects {
     display: flex;
     flex-wrap: wrap;
@@ -268,6 +271,11 @@ h3 {
     height: 187px;
     overflow: hidden;
     margin: 10px;
+}
+
+.portfolio-projects-item__pressed {
+    margin: 5px;
+    border: 5px solid #F06C64;
 }
 
 .portfolio-projects__item:nth-child(1n + 13) {
