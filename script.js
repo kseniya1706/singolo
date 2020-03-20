@@ -11,6 +11,28 @@ document.querySelector('.portfolio-tags').addEventListener('mousedown', () => po
 function portfolioTagClick(event) {
     document.querySelector('.portfolio-tag-choosed').classList.remove('portfolio-tag-choosed');
     event.target.classList.add('portfolio-tag-choosed');
+    
+    document.querySelectorAll('.portfolio-projects__item').forEach(item => {
+        item.style.order = '0';
+    });
+    
+    let choosedTag = document.querySelector('.portfolio-tag-choosed').textContent;
+
+    if (choosedTag == 'Web Design') {
+        document.querySelectorAll('.w-design-tag').forEach(item => {
+            item.style.order = '-1';
+        })
+    }
+    if (choosedTag =='Graphic Design') {
+        document.querySelectorAll('.g-design-tag').forEach(item => {
+            item.style.order = '-1';
+        })
+    }
+    if (choosedTag =='Artwork') {
+        document.querySelectorAll('.art-proj-tag').forEach(item => {
+            item.style.order = '-1';
+        })
+    }
  }
 
 

@@ -282,6 +282,18 @@ h3 {
     display: none;
 }
 
+.w-design-tag {
+    order: 0;
+}
+
+.g-design-tag {
+    order: 0;
+}
+
+.art-proj-tag {
+    order: 0;
+}
+
 .aboutus {
     height: 668px;
     background-color: #f2f2f2;
