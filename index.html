@@ -104,10 +104,10 @@
                  eget lacinia odio sem nec elit.</p>
         </div>
         <div class = "portfolio-tags">
-            <div class = "portfolio-tag portfolio-tag-choosed">All</div>
-            <div class = "portfolio-tag">Web Design</div>
-            <div class = "portfolio-tag">Graphic Design</div>
-            <div class = "portfolio-tag">Artwork</div>
+            <div class = "portfolio-tag portfolio-tag-choosed" id = "all-proj-tag">All</div>
+            <div class = "portfolio-tag" id = "w-design-tag">Web Design</div>
+            <div class = "portfolio-tag" id = "g-design-tag">Graphic Design</div>
+            <div class = "portfolio-tag" id = "art-proj-tag">Artwork</div>
         </div>
         <ul class = "portfolio-projects">
             <li class = "portfolio-projects__item"><img src="./assets/images/project1.png"></li>
@@ -186,13 +186,12 @@
             condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia 
             odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
         <div class = "getaquote-main">
-            <!-- action = "#" method="GET" -->
-        <form class = "getaquote-form">
-            <input type="text" class = "getaquote-form__text" placeholder="Name (Required)" required>
-            <input type="email" class = "getaquote-form__text" placeholder="Email (Required)"required> 
-            <input type="text" class = "getaquote-form__text"placeholder="Subject">
-            <textarea class = "getaquote-form__textarea" placeholder="Describe your project in detail..."></textarea>
-            <button class = "getaquote-form__button">Send!</button>
+        <form class = "getaquote-form" action = "#">
+            <input type="text" id = "getaquote-name" class = "getaquote-form__text" placeholder="Name (Required)" required>
+            <input type="email" id = "getaquote-mail" class = "getaquote-form__text" placeholder="Email (Required)"required> 
+            <input type="text" id = "getaquote-subject" class = "getaquote-form__text"placeholder="Subject">
+            <textarea id = "getaquote-description" class = "getaquote-form__textarea" placeholder="Describe your project in detail..."></textarea>
+            <button type = "button" class = "getaquote-form__button" id = "submit">Send!</button>
         </form>
 
         <div class = "getaquote-contacts">

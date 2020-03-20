@@ -22,3 +22,37 @@ function portfolioProjectsClick(event) {
     }
     event.target.parentElement.classList.add('portfolio-projects-item__pressed');
  }
+
+
+ document.getElementById('submit').addEventListener('mousedown', () => sendInfo());
+
+ function sendInfo() {
+    const subject = document.querySelector('#getaquote-subject').value;
+    const description = document.querySelector('#getaquote-description').value;
+
+    let message = '';
+
+    if (subject == '' || description == '') {
+        message = `<strong>Письмо отправлено</strong><br>Без темы<br>Без описания`;
+    } else {
+        message = `<strong>Письмо отправлено</strong><br>Тема: ${subject}<br>Описание: ${description}`;
+    }
+
+    const popup = document.createElement('div');
+    popup.className = 'getaquote-popup';
+    document.body.prepend(popup);
+
+    const popupMessage = document.createElement('div');
+    popupMessage.innerHTML = message;
+    popup.append(popupMessage);
+
+    const closeBtn = document.createElement('button');
+    closeBtn.classList.add('getaquote-popup-close');
+    closeBtn.innerHTML = 'Ok';
+    popup.append(closeBtn);
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = "none";
+    })
+
+ }
